@@ -1,16 +1,28 @@
----
-title: Indic Parler-TTS
-emoji: 👀
-colorFrom: blue
-colorTo: pink
-sdk: gradio
-sdk_version: 5.7.1
-app_file: app.py
-pinned: true
-license: apache-2.0
-short_description: A demo of Indic Parler-TTS
-thumbnail: >-
-  https://cdn-uploads.huggingface.co/production/uploads/62611fcabbcbd1c34f1615f6/7v2cvg8cPKrWU0DahrbU_.png
----
+****Deployment with Replicate****
 
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+This guide walks you through deploying and using Replicate on your system.
+**Prerequisites**
+
+Before proceeding, ensure you have the following installed:
+Docker
+Install Docker on your Windows or macOS machine. Visit Docker's official website for installation instructions.
+Python Environment
+Create a virtual environment in your project directory to manage dependencies. Use the following command:
+python -m venv env
+Installation Steps
+
+**Activate the Virtual Environment**
+For Windows:
+.\env\Scripts\activate
+For macOS/Linux:
+source env/bin/activate
+
+**Install Required Libraries**
+Install the necessary libraries using pip:
+pip install replicate cog
+
+**Running the Prediction**
+
+Use the following command to run predictions with Replicate:
+cog predict -i text="Your input text here" -i description="Speaker description here"
+Replace the placeholders with your desired input.
