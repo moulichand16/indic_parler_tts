@@ -1,0 +1,9 @@
+# cog.yaml: Configuration file for building and deploying your model with Cog
+build:
+  python_version: "3.9"  # Specify the Python version
+  python_packages:
+    - torch
+    - spaces
+    - git+https://github.com/huggingface/parler-tts.git
+    - nltk
+predict: predict.py:Predictor

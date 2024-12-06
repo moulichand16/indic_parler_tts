@@ -1,0 +1,4 @@
+torch
+spaces
+git+https://github.com/huggingface/parler-tts.git
+nltk
